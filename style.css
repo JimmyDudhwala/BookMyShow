@@ -2,11 +2,168 @@
     box-sizing: border-box;
     margin: 0;  
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    height: auto;
+    width: 100%;
     
+}
+
+.nav{
+    height: 64px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .navContainer{
+    height: 100%;
+    width: 1240px;
+    background-color: #ffffff;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .navContainer .part1{
+    height: 100%;
+    width: 1021px;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: start;
+   align-items: center !important; 
+}
+
+
+.nav .navContainer .part1 .logo{
+    height: auto;
+    width: 134px;
+  
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav .navContainer .part1 .searchBar{
+    height: auto;
+    width: 796px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+
+.nav .navContainer .part1 .searchBar .searchInput{
+    height: 100%;
+    width: 549px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    border: 1px solid #9999992b;
+    border-radius: 4px;
+}
+
+.nav .navContainer .part1 .searchBar .searchInput .searchIcon{
+    min-height: 35px;
+    min-width: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: relative;
+   
+    
+} 
+
+ .nav .navContainer .part1 .searchBar .searchInput .inputText{
+    width: 549px;
+    height: 35px;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav .navContainer .part1 .searchBar .searchInput .inputText input{
+    width: 495px;
+    height: 16px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #9999;
+   padding-left:0px ;
+    
+}
+.nav .navContainer .part1 .searchBar .searchInput .inputText input::placeholder{
+    color: #00000070;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: 500;
+ 
+   
+}
+
+.nav .navContainer .part2{
+    height: 100%;
+    width: 219px;
+  
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .navContainer .part2 .loctionContainer{
+    width: 82px;
+    height: 19px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .navContainer .part2 .loctionContainer .cityContainer{
+     width: 66px;
+     height: 19px;
+     font-size: 14px;
+}
+
+.nav .navContainer .part2 .loctionContainer .cityIcon{
+    height: 16px;
+    width: 16px;
+}
+
+.nav .navContainer .part2 .loginContainer{
+    width: 113px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .navContainer .part2 .loginContainer .login{
+    width: 67px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #f84464;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .navContainer .part2 .loginContainer .login .loginText{
+    font-size: 12px;
+    color: #ffffff;
+
 }
