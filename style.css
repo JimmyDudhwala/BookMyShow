@@ -1,20 +1,21 @@
-*{
+* {
     box-sizing: border-box;
-    margin: 0;  
+    margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
     height: auto;
     width: 100%;
-    
+    overflow-x: hidden;
+
 }
 
-.nav{
+.nav {
     height: 64px;
     width: 100%;
     background-color: #ffffff;
@@ -23,36 +24,36 @@ body{
     align-items: center;
 }
 
-.nav .navContainer{
+.nav .navContainer {
     height: 100%;
     width: 1240px;
     background-color: #ffffff;
-  
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav .navContainer .part1{
+.nav .navContainer .part1 {
     height: 100%;
     width: 1021px;
-   background-color: #ffffff;
-   display: flex;
-   justify-content: start;
-   align-items: center !important; 
+    background-color: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center !important;
 }
 
 
-.nav .navContainer .part1 .logo{
+.nav .navContainer .part1 .logo {
     height: auto;
     width: 134px;
-  
+
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.nav .navContainer .part1 .searchBar{
+.nav .navContainer .part1 .searchBar {
     height: auto;
     width: 796px;
     background-color: #ffffff;
@@ -60,7 +61,7 @@ body{
 }
 
 
-.nav .navContainer .part1 .searchBar .searchInput{
+.nav .navContainer .part1 .searchBar .searchInput {
     height: 100%;
     width: 549px;
     background-color: #ffffff;
@@ -72,19 +73,19 @@ body{
     border-radius: 4px;
 }
 
-.nav .navContainer .part1 .searchBar .searchInput .searchIcon{
+.nav .navContainer .part1 .searchBar .searchInput .searchIcon {
     min-height: 35px;
     min-width: 39px;
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    position: relative;
-   
-    
-} 
 
- .nav .navContainer .part1 .searchBar .searchInput .inputText{
+    position: relative;
+
+
+}
+
+.nav .navContainer .part1 .searchBar .searchInput .inputText {
     width: 549px;
     height: 35px;
     position: relative;
@@ -93,7 +94,7 @@ body{
     align-items: center;
 }
 
-.nav .navContainer .part1 .searchBar .searchInput .inputText input{
+.nav .navContainer .part1 .searchBar .searchInput .inputText input {
     width: 495px;
     height: 16px;
     border: none;
@@ -101,49 +102,50 @@ body{
     padding-left: 10px;
     font-size: 14px;
     color: #9999;
-   padding-left:0px ;
-    
+    padding-left: 0px;
+
 }
-.nav .navContainer .part1 .searchBar .searchInput .inputText input::placeholder{
+
+.nav .navContainer .part1 .searchBar .searchInput .inputText input::placeholder {
     color: #00000070;
     font-size: 14px;
     line-height: normal;
     letter-spacing: normal;
     font-weight: 500;
- 
-   
+
+
 }
 
-.nav .navContainer .part2{
+.nav .navContainer .part2 {
     height: 100%;
     width: 219px;
-  
-   display: flex;
+
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav .navContainer .part2 .loctionContainer{
+.nav .navContainer .part2 .loctionContainer {
     width: 82px;
     height: 19px;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.nav .navContainer .part2 .loctionContainer .cityContainer{
-     width: 66px;
-     height: 19px;
-     font-size: 14px;
+.nav .navContainer .part2 .loctionContainer .cityContainer {
+    width: 66px;
+    height: 19px;
+    font-size: 14px;
 }
 
-.nav .navContainer .part2 .loctionContainer .cityIcon{
+.nav .navContainer .part2 .loctionContainer .cityIcon {
     height: 16px;
     width: 16px;
 }
 
-.nav .navContainer .part2 .loginContainer{
+.nav .navContainer .part2 .loginContainer {
     width: 113px;
     height: 25px;
 
@@ -152,7 +154,7 @@ body{
     justify-content: space-between;
 }
 
-.nav .navContainer .part2 .loginContainer .login{
+.nav .navContainer .part2 .loginContainer .login {
     width: 67px;
     height: 25px;
     border-radius: 4px;
@@ -162,8 +164,492 @@ body{
     justify-content: center;
 }
 
-.nav .navContainer .part2 .loginContainer .login .loginText{
+.nav .navContainer .part2 .loginContainer .login .loginText {
     font-size: 12px;
     color: #ffffff;
 
+}
+
+.nav2 {
+    height: 40px;
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 .nav2Container {
+    height: 100%;
+    width: 1240px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav2 .nav2Container .eventSection {
+    height: 100%;
+    width: 930px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.nav2 .nav2Container .eventSection ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav2 .nav2Container .eventSection ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav2 .nav2Container .offerSection {
+
+    height: 100%;
+    width: 302px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.nav2 .nav2Container .offerSection ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.nav2 .nav2Container .offerSection ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #333;
+    font-weight: 500;
+    padding-right: 12px;
+    padding-left: 12px;
+    white-space: nowrap;
+}
+
+.nav2 .nav2Container .offerSection ul li:nth-last-child(1) {
+    padding-right: 0px;
+    padding-left: 12px;
+}
+
+.latestScroller {
+    height: 349px;
+    width: 100%;
+    background-color: #ffffff;
+
+}
+
+.latestScroller .latestScrollerContainer{
+    width: 100%;
+    height: 317px;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+.latestScroller .swiper {
+    width: 100%;
+    height: 307px;
+    background-color: #ebebeb;
+    
+  }
+
+ 
+ 
+  .latestScroller .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1210px;
+    max-height: 298px;
+    border-radius: 10px;
+  
+  
+  }
+
+  .latestScroller .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .latestScroller .swiper-button-prev::after {
+    content: '' !important; 
+    display: inline-block !important;
+    width: 20px !important;
+    height: 20px !important;
+    background-image: url('/main/path/to/your/next.svg') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2 !important;
+    
+}
+
+
+.latestScroller .swiper-button-next::after {
+    content: '' !important; /* Remove the default icon */
+    display: inline-block !important;
+    width: 20px !important; /* Adjust the width */
+    height: 20px !important; /* Adjust the height */
+    background-image: url('/main/path/to/your/prev.svg') !important; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2 !important;
+}
+.latestScroller .swiper-pagination {
+    bottom: 25px !important; /* Adjust the position */
+    text-align: center !important;
+}
+
+/* Custom styles for pagination bullets */
+.latestScroller .swiper-pagination-bullet {
+    background-color: white !important; /* Change bullet color */
+    width: 8px !important;
+    height: 8px !important;
+    opacity: 0.5 !important;
+}
+
+/* Custom styles for active pagination bullet */
+.latestScroller .swiper-pagination-bullet-active {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #ffffff !important; /* Change active bullet color */
+    opacity: 1 !important;
+}
+
+.show{
+    height: 510px;
+    width: 1707px;
+    background-color: #ffffff;
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+  
+}
+
+ .showSection{
+    width: 1240px;
+    height: 510px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 32px;
+    margin-left: 233px;
+    margin-right: 233px;
+}
+
+ .showSection .showTitle{
+    width: 1240px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: transparent;
+
+  
+}
+
+ .showSection .showTitle .showTextTitle{
+    height: 28px;
+    width: 246px;
+    font-size: 24px;
+    color: #333333;
+    font-weight: 600;
+    text-align: start;
+    white-space: nowrap;
+    line-height: 28.08px;
+}
+
+ .showSection .showTitle .seeAll{
+    min-height: 20px;
+    width: 50px;
+    font-size: 14px;
+    color: #dc3558;
+    font-weight: 500;
+    white-space: nowrap;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    line-height: 20.02px;
+    
+}
+
+.showContainer{
+    height: 442px;
+    width: 1240px;
+    background-color: transparent;
+}
+
+
+
+.showContainer .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+ .showContainer .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 222px;
+    max-height: 442px;
+    border-radius: 10px;
+
+
+  }
+
+.showContainer .showImage{
+    height: 382px;
+    width: 222px;
+    background-color: #000000;
+    border-radius: 12px;
+  }
+
+.showContainer  .showText{
+    height: 55px;
+    width: 222px;
+    margin-top:4px;
+    padding-top: 4px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+  }
+
+ .showContainer .showText .showName{
+    font-size: 18px;
+    color: #222222;
+    max-height: 23px;
+    width: auto;
+    margin-bottom: 4px;
+    font-weight: 550;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+ .showContainer .showGoner{
+    font-size: 16px;
+    color: #666666;
+  }
+ .showContainer .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .slab{
+    width: 1707px;
+    height: 199px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slab .slabSection{
+   max-width: 1240px;
+    height: 199px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;  
+    padding-bottom:48px;
+    font-size: 16px;
+    
+  }
+  .slabSection img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.event{
+    height: 354px;
+    width: 1707px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event .eventSection{
+   
+    width: 1240px;
+    height: 354px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    
+}
+
+.event .eventSection .title{
+    min-width: 1240px;
+    height: 28px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: #ffffff;
+   
+}
+
+.event .eventSection .title .titleText{
+    width: 255px;
+    height: 28px;
+    font-size: 24px;
+    line-height: 28.08px;
+    font-weight:600;
+    white-space: nowrap;
+    background-color: #ffffff;
+}
+
+.event .eventSection .eventContainer{
+    height: 222px;
+    width: 1240px;
+    background-color: #ffffff;
+   margin-top: 8px;
+}
+.event .eventSection .swiper {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .event .eventSection .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+
+  }
+
+  .event .eventSection .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .premiere{
+    width: 1707px;
+    height: 199px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b3148;
+  }
+
+  .premiere .premeireSection{
+     max-width: 1240px;
+    height: 199px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;  
+    padding-bottom:48px;
+    font-size: 16px;
+
+    
+  }
+  .premeireSection img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.premeiereShow{
+    height: 510px;
+    width: 1707px;
+    background-color: #2b3148;
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.premeiereShow .showTextTitle{
+    position: relative;
+    bottom: 20px;
+    color: #ffffff !important;
+}
+
+.premeiereShow .showTextTitle div:nth-child(2){
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.08px;
+   
+}
+
+.premeiereShow .showText .showName{
+    color: #ffffff !important;
+}
+
+.premeiereShow .showText .showGoner{
+    color: #ffffff !important;
+}
+
+.musicShow{
+    margin-top: 32px;
+    height: 510px;
+    width: 1707px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.funShow{
+    margin-top: 32px;
+    height: 510px;
+    width: 1707px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
