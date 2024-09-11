@@ -470,13 +470,15 @@ body {
     font-size: 18px;
     color: #222222;
     max-height: 23px;
-    width: auto;
+    width: 222px;
     margin-bottom: 4px;
     font-weight: 550;
     line-height: 24px;
     letter-spacing: 1px;
     white-space: nowrap;
     text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .showContainer .showGoner {
