@@ -24,22 +24,30 @@ const genres = selectedMovie.genre.split('/');
 const genreListItems = genres.map(genre => `<li>${genre}</li>`).join('');
 
 
+const headingSection = document.querySelector(".headingSection .title a");
+
+function navigateToMoviePage() {
+    const href = "../movies/movie.html";
+    window.location.href = href;
+}
+
 if (selectedMovie) {
     const headingSection = document.querySelector(".heading");
 
-    headingSection.innerHTML =
-        `<div class="headingSection">
-    <div class="title"><a href>${selectedMovie.title}</a></div>
-    <div class="goner">
-        <div class="rated"><span>${selectedMovie.ageRate}</span></div>
-        <div class="gonerList">
-           <ul>
-                ${genreListItems}
-            </ul>
+    headingSection.innerHTML = `    
+        <div class="headingSection">    
+            <div class="title"><a href="#" onclick="navigateToMoviePage()">${selectedMovie.title}</a></div>
+
+            <div class="goner">
+                <div class="rated"><span>${selectedMovie.ageRate}</span></div>
+                <div class="gonerList">
+                    <ul>
+                        ${genreListItems}
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-`
+    `;
 }
 
 const theaterName = document.querySelector(".parent");
