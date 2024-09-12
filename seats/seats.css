@@ -1,0 +1,404 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.movieHeader {
+    width: 100%;
+    height: 135px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 2  ;
+
+}
+
+.movieHeader .movieHeaderSection {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.movieHeader .movieHeaderSection .part1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+
+}
+
+.movieHeader .movieHeaderSection .backButton {
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 15px;
+    padding-bottom: 15px;
+}
+
+.movieHeader .movieHeaderSection .movieName {
+    width: 385px;
+    height: 58px;
+
+
+}
+
+.movieHeader .movieHeaderSection .movieName .name {
+    height: 30px;
+    width: 385px;
+
+    font-size: 14px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+
+}
+
+.movieHeader .movieHeaderSection .movieName .name span {
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
+    border: 1.5px solid #333333;
+    border-radius: 50%;
+    font-weight: 600;
+    color: #333333;
+    margin-left: 5px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movieHeader .movieHeaderSection .movieName .theaterInfo {
+    width: 385px;
+    height: 28px;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    color: #666666;
+    white-space: nowrap;
+    display: flex;
+    align-items: start;
+    padding-top: 2px;
+    white-space: nowrap;
+}
+
+.movieHeader .movieHeaderSection .part2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 10px;
+}
+
+.movieHeader .movieHeaderSection .noOfTickets {
+    height: 26px;
+    width: 106px;
+
+}
+
+.movieHeader .movieHeaderSection .noOfTickets .noOfTicketsSection {
+    width: 86px;
+    height: 26px;
+    padding: 4px 8px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #666666;
+}
+
+.movieHeader .movieHeaderSection .cancel {
+
+    height: auto;
+    width: auto;
+    margin-right: 30px;
+    margin-left: 85px;
+}
+
+.movieHeader .showTimming {
+    width: 100%;
+    height: 58px;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #f5f5fa;
+
+}
+
+.movieHeader  .showTimming .showSection{
+    margin-left: 48px;
+    width: 90%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+
+.time{
+    width: 96px;
+    height: 38px;
+    border: 1px solid #4abd5d;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #4abd5d;
+    margin: 0px 5px;
+}
+
+
+.empty{
+    width: 100vw;
+    height: 100vh;
+    margin: 1px;
+    background-color: black;
+}
+
+
+.seatInfo{
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0px;
+}
+
+.seatInfo .container{
+    width: auto;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seatInfo .container .box{
+    height: 16px;
+    width: 16px;
+   
+    margin-left: 32px;
+
+}
+
+.seatInfo  .available .box{
+    background-color: #fff;
+    border: 1px solid #1ea83c;
+    border-radius: 2px;
+}
+.seatInfo  .selected .box{
+    background-color: #1ea83c;
+    border-radius: 2px;
+}
+.seatInfo  .sold .box{
+    background-color: #eeeeee;
+    border-radius: 2px;
+}
+
+
+.seatInfo .container .text{
+    height: 20px;
+    width: auto;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 8px;
+    color: #666666;
+    margin-left: 8px;
+}
+
+.seatContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+    margin-top: 135px;
+    
+}
+
+.seatContainer .seatSection{
+    min-width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0px 462px;
+ 
+}  
+
+.seatContainer .seatSection .priceContainer{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.seatContainer .seatSection .priceContainer .priceSection{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #999999;
+    border-bottom: 1px solid #66666630;
+    
+}
+
+.seatContainer .seatSection .seat{
+    min-height: 33px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.seatContainer .seatSection .seat .seatRow{
+    height: 100%;
+    width: 18px;
+ 
+   
+    font-size: 14px;
+    color: #b3b3b3;
+}
+.seatContainer .seatSection .seat .seatBox{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.seatContainer .seatSection .seat .seatBox input{
+    height: 25px;
+    width: 25px;
+    margin: 4px;
+  
+    
+}
+
+
+
+input[type="checkbox"] {
+    appearance: none; 
+    width: 12px;
+    height: 12px;
+    border: 1px solid #1ea83c !important;
+    position: relative;
+    border-radius: 2px;
+    
+}
+
+input[type="checkbox"]::after{
+    content: attr(no);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1ea83c;
+    font-size: 10px;
+}
+input[type="checkbox"]:hover {
+    background-color: #1ea83c; 
+    border: 0px solid #666;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover::after {
+  
+    content: attr(no);
+    position: relative;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #1ea83c; 
+    border: 0px solid #666;
+}
+input[type="checkbox"]:checked::after {
+    content: attr(no);
+    position: relative;
+     display: flex;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%); 
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.seatContainer .seatSection .seat .seatBox input:nth-child(1),input:nth-child(10),input:nth-child(11){
+    visibility: hidden;
+}
+
+.one input:nth-child(10), .one input:nth-child(11){
+    visibility: visible;
+}
+
+.none {
+    visibility: hidden;
+}
+
+.gap{
+    height: 20px;
+    width: 100%;
+}
+
+.screen{
+    width: 550px;
+    height: 96px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.screen .ract{
+    height: 60px;
+    width: 260px;
+   border: 10px solid #e8f1fa;
+   background-color: #dbe7fd;
+    transform: perspective(1000px) rotateX(70deg); /* 3D perspective and rotation */
+}
+
+.screen .text{
+    color: #333333;
+    font-size: 12px ;
+
+}
+

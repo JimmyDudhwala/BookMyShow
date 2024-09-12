@@ -592,7 +592,9 @@ body {
     width: 132px;
     font-size: 12px;
     font-weight: "400";
-
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .booking .bookingSection .choices .icon {
@@ -924,15 +926,28 @@ a {
     color: #333;
 }
 
-.cinemaSection {
-    margin-left: 225px;
-    margin-right: 225px;
+.parent {
+
     min-height: 114px;
     height: auto;
+
     width: 1240px;
+    background-color: transparent;
+    margin-left: 225px;
+    margin-right: 225px;
+    z-index: 1;
+
+}
+
+.cinemaSection {
+
+    min-height: 114px;
+    height: auto;
+    min-width: 1240px;
     background-color: #ffffff;
-    padding: 13px 20px 13px 20px;
     display: flex;
+    justify-content: start;
+    align-items: start;
 
 }
 
@@ -940,6 +955,8 @@ a {
     width: 336px;
     height: 87px;
     background-color: #fff;
+    display: flex;
+    margin-left: 10px;
 
 }
 
@@ -958,11 +975,13 @@ a {
     height: 64px;
     padding-right: 10px;
     background-color: #fff;
+    z-index: 1;
 
 }
 
 .cinemaSection .cinemaContainer .cinemaName .heart svg {
     cursor: pointer;
+    z-index: 2;
 }
 
 .cinemaSection .cinemaContainer .cinemaName .aboutCinema {
