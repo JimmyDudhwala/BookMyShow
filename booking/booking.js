@@ -24,12 +24,12 @@ const genres = selectedMovie.genre.split('/');
 const genreListItems = genres.map(genre => `<li>${genre}</li>`).join('');
 
 
-const headingSection = document.querySelector(".headingSection .title a");
+// const headingSection = document.querySelector(".headingSection .title a");
 
-function navigateToMoviePage() {
-    const href = "../movies/movie.html";
-    window.location.href = href;
-}
+// function navigateToMoviePage() {
+//     const href = "../movies/movie.html";
+//     window.location.href = href;
+// }
 
 if (selectedMovie) {
     const headingSection = document.querySelector(".heading");
@@ -63,7 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             function displayTheaters(theaters) {
                 theaterName.innerHTML = '';
-                theaters.forEach(theater => {
+                theaters.forEach((theater, i) => {
+
                     theaterName.innerHTML += `
                         <div class="cinemaSection">
                             <div class="cinemaContainer">
@@ -119,11 +120,9 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </div>
                                 <div class="timeSection">
                                 
-                
-                                
                                     ${theater.timings.map(showTime => `
                                         
-                                        <a href="../seats/seats.html">
+                                         <a href="../seats/seats.html"> 
                                             <div class="timeContainer">
                                                 <div class="block">
                                                     <div class="blockSection">
@@ -163,6 +162,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             </div>
                         </div>
                     `;
+
+
                 });
 
                 // Attach event listeners to heart SVGs
@@ -280,8 +281,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             //         console.log(selectedtimes);
 
-
-
             //         if (selectedtimes.length != 0) {
             //             choice.innerHTML = `${item.textContent}`;
             //             displayTheaters(selectedtimes);
@@ -337,7 +336,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         };
                     }).filter(theater => theater.timings.length > 0);
                 }
-
 
                 if (selectedTimes.length > 0) {
                     filteredTheaters = filteredTheaters.map(theater => {
@@ -457,6 +455,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 displayTheaters(filteredTheaters);
             });
 
+            const cinemaTime = document.querySelectorAll(".cinemaTime .timeSection .time");
+
+            cinemaTime.forEach((item) => {
+                item.addEventListener("click", function () {
+                    const cinemaName = item.closest(".cinemaSection").querySelector(".cinemaName .title").textContent;
+                    const cinemaTime = item.textContent;
+
+                    localStorage.setItem('selectedTheater', JSON.stringify(cinemaName));
+                    localStorage.setItem('selectedTime', JSON.stringify(cinemaTime));
+
+                });
+            });
 
         })
 });
@@ -495,6 +505,29 @@ if (mySwiper) {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const dateSections = document.querySelectorAll('.dateSection');
+
+    dateSections.forEach(function (section) {
+        section.addEventListener('click', function () {
+
+            // Get the selected date, day, and month from the active section
+            const selectedDate = section.querySelector(".dateContainer .date").textContent;
+            const selectedDay = section.querySelector(".dateContainer .day").textContent;
+            const selectedMonth = section.querySelector(".dateContainer .month").textContent;
+
+            const bookingDate = {
+                date: selectedDate,
+                day: selectedDay,
+                month: selectedMonth
+            }
+
+            // Store the selected date, day, and month in local storage
+            localStorage.setItem('selectedDate', JSON.stringify(bookingDate));
+
+        });
+    });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     var swiperContainer = document.querySelector(".mySwiper");

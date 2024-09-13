@@ -11,7 +11,7 @@
     position: fixed;
     top: 0;
     background-color: #fff;
-    z-index: 2  ;
+    z-index: 2;
 
 }
 
@@ -46,18 +46,20 @@
 .movieHeader .movieHeaderSection .movieName {
     width: 385px;
     height: 58px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 
 }
 
 .movieHeader .movieHeaderSection .movieName .name {
     height: 30px;
-    width: 385px;
-
+    width: auto;
     font-size: 14px;
     white-space: nowrap;
     display: flex;
     align-items: center;
+
 
 }
 
@@ -69,7 +71,7 @@
     border-radius: 50%;
     font-weight: 600;
     color: #333333;
-    margin-left: 5px;
+    margin-left: 8px;
     padding: 2px;
     padding-left: 5px;
     padding-right: 5px;
@@ -141,7 +143,7 @@
 
 }
 
-.movieHeader  .showTimming .showSection{
+.movieHeader .showTimming .showSection {
     margin-left: 48px;
     width: 90%;
     height: 48px;
@@ -150,10 +152,10 @@
 }
 
 
-.time{
+.time {
     width: 96px;
     height: 38px;
-    border: 1px solid #4abd5d;
+    border: 1px solid #2dc492;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -163,8 +165,20 @@
     margin: 0px 5px;
 }
 
+.showSection .time.active {
+    width: 96px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2dc492;
+    border: #2dc492;
+    color: #fff;
+    border-radius: 4px;
+}
 
-.empty{
+
+.empty {
     width: 100vw;
     height: 100vh;
     margin: 1px;
@@ -172,7 +186,7 @@
 }
 
 
-.seatInfo{
+.seatInfo {
     width: 100%;
     height: 32px;
     display: flex;
@@ -183,7 +197,7 @@
     bottom: 0px;
 }
 
-.seatInfo .container{
+.seatInfo .container {
     width: auto;
     height: 20px;
     display: flex;
@@ -191,30 +205,32 @@
     justify-content: center;
 }
 
-.seatInfo .container .box{
+.seatInfo .container .box {
     height: 16px;
     width: 16px;
-   
+
     margin-left: 32px;
 
 }
 
-.seatInfo  .available .box{
+.seatInfo .available .box {
     background-color: #fff;
     border: 1px solid #1ea83c;
     border-radius: 2px;
 }
-.seatInfo  .selected .box{
+
+.seatInfo .selected .box {
     background-color: #1ea83c;
     border-radius: 2px;
 }
-.seatInfo  .sold .box{
+
+.seatInfo .sold .box {
     background-color: #eeeeee;
     border-radius: 2px;
 }
 
 
-.seatInfo .container .text{
+.seatInfo .container .text {
     height: 20px;
     width: auto;
     font-size: 14px;
@@ -224,7 +240,7 @@
     margin-left: 8px;
 }
 
-.seatContainer{
+.seatContainer {
     width: 100%;
     height: 100%;
     display: flex;
@@ -232,31 +248,31 @@
     align-items: center;
     padding: 50px 30px;
     margin-top: 135px;
-    
+
 }
 
-.seatContainer .seatSection{
+.seatContainer .seatSection {
     min-width: 700px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0px 462px;
- 
-}  
+    margin: 0px 462px;
 
-.seatContainer .seatSection .priceContainer{
+}
+
+.seatContainer .seatSection .priceContainer {
     height: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    
+
 }
 
-.seatContainer .seatSection .priceContainer .priceSection{
+.seatContainer .seatSection .priceContainer .priceSection {
     width: 100%;
     height: 25px;
     margin-bottom: 5px;
@@ -264,27 +280,28 @@
     font-size: 12px;
     color: #999999;
     border-bottom: 1px solid #66666630;
-    
+
 }
 
-.seatContainer .seatSection .seat{
+.seatContainer .seatSection .seat {
     min-height: 33px;
     width: 100%;
     display: flex;
     align-items: center;
-    
+
 
 }
 
-.seatContainer .seatSection .seat .seatRow{
+.seatContainer .seatSection .seat .seatRow {
     height: 100%;
     width: 18px;
- 
-   
+
+
     font-size: 14px;
     color: #b3b3b3;
 }
-.seatContainer .seatSection .seat .seatBox{
+
+.seatContainer .seatSection .seat .seatBox {
     height: 100%;
     width: 100%;
     display: flex;
@@ -292,79 +309,84 @@
     align-items: center;
 }
 
-.seatContainer .seatSection .seat .seatBox input{
+.seatContainer .seatSection .seat .seatBox input {
     height: 25px;
     width: 25px;
     margin: 4px;
-  
-    
+
+
 }
 
 
 
 input[type="checkbox"] {
-    appearance: none; 
+    appearance: none;
     width: 12px;
     height: 12px;
     border: 1px solid #1ea83c !important;
     position: relative;
     border-radius: 2px;
-    
+
 }
 
-input[type="checkbox"]::after{
+input[type="checkbox"]::after {
     content: attr(no);
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
     color: #1ea83c;
     font-size: 10px;
 }
+
 input[type="checkbox"]:hover {
-    background-color: #1ea83c; 
+    background-color: #1ea83c;
     border: 0px solid #666;
     cursor: pointer;
 }
 
 input[type="checkbox"]:hover::after {
-  
+
     content: attr(no);
     position: relative;
     display: flex;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
     color: #fff;
 }
 
 input[type="checkbox"]:checked {
-    background-color: #1ea83c; 
+    background-color: #1ea83c;
     border: 0px solid #666;
 }
+
 input[type="checkbox"]:checked::after {
     content: attr(no);
     position: relative;
-     display: flex;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%); 
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
     color: #fff;
 }
 
 
-.seatContainer .seatSection .seat .seatBox input:nth-child(1),input:nth-child(10),input:nth-child(11){
+.seatContainer .seatSection .seat .seatBox input:nth-child(1),
+input:nth-child(10),
+input:nth-child(11) {
     visibility: hidden;
 }
 
-.one input:nth-child(10), .one input:nth-child(11){
+.one input:nth-child(10),
+.one input:nth-child(11) {
     visibility: visible;
 }
 
@@ -372,12 +394,12 @@ input[type="checkbox"]:checked::after {
     visibility: hidden;
 }
 
-.gap{
+.gap {
     height: 20px;
     width: 100%;
 }
 
-.screen{
+.screen {
     width: 550px;
     height: 96px;
     margin-top: 15px;
@@ -388,17 +410,52 @@ input[type="checkbox"]:checked::after {
 
 }
 
-.screen .ract{
+.screen .ract {
     height: 60px;
     width: 260px;
-   border: 10px solid #e8f1fa;
-   background-color: #dbe7fd;
-    transform: perspective(1000px) rotateX(70deg); /* 3D perspective and rotation */
+    border: 10px solid #e8f1fa;
+    background-color: #dbe7fd;
+    transform: perspective(1000px) rotateX(70deg);
+    /* 3D perspective and rotation */
 }
 
-.screen .text{
+.screen .text {
     color: #333333;
-    font-size: 12px ;
+    font-size: 12px;
 
 }
 
+.totalPriceSection {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;
+    display: none;
+}
+
+.totalPriceSection .totalPriceContainer {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalPriceSection .totalPriceContainer .totalPrice {
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f84464;
+}
