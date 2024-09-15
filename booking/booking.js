@@ -468,6 +468,33 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             });
 
+
+            const ASections = document.querySelectorAll('.timeSection a');
+
+            ASections.forEach(function (section) {
+
+                section.addEventListener('click', function (e) {
+                    console.log("click")
+
+                    const selectedDate = document.querySelector(" .dateContainer .date").textContent;
+                    const selectedDay = document.querySelector(" .dateContainer .day").textContent;
+                    const selectedMonth = document.querySelector(" .dateContainer .month").textContent;
+
+                    console.log(selectedDate, selectedDay, selectedMonth);
+
+                    const bookingDate = {
+                        date: selectedDate,
+                        day: selectedDay,
+                        month: selectedMonth
+                    };
+
+                    localStorage.setItem('selectedDate', JSON.stringify(bookingDate));
+
+
+                });
+
+            });
+
         })
 });
 
@@ -506,30 +533,6 @@ if (mySwiper) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const dateSections = document.querySelectorAll('.dateSection');
-
-    dateSections.forEach(function (section) {
-        section.addEventListener('click', function () {
-
-            // Get the selected date, day, and month from the active section
-            const selectedDate = section.querySelector(".dateContainer .date").textContent;
-            const selectedDay = section.querySelector(".dateContainer .day").textContent;
-            const selectedMonth = section.querySelector(".dateContainer .month").textContent;
-
-            const bookingDate = {
-                date: selectedDate,
-                day: selectedDay,
-                month: selectedMonth
-            }
-
-            // Store the selected date, day, and month in local storage
-            localStorage.setItem('selectedDate', JSON.stringify(bookingDate));
-
-        });
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     var swiperContainer = document.querySelector(".mySwiper");
     if (swiperContainer) {
         var swiper = new Swiper(".mySwiper", {
@@ -548,6 +551,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+const dateSections = document.querySelectorAll('.dateSection');
+
+dateSections.forEach(function (section) {
+
+    section.addEventListener('click', function (e) {
+        console.log("click")
+
+        const selectedDate = section.querySelector(" .dateContainer .date").textContent;
+        const selectedDay = section.querySelector(".dateContainer .day").textContent;
+        const selectedMonth = section.querySelector(" .dateContainer .month").textContent;
+
+        console.log(selectedDate, selectedDay, selectedMonth);
+
+        const bookingDate = {
+            date: selectedDate,
+            day: selectedDay,
+            month: selectedMonth
+        };
+
+        localStorage.setItem('selectedDate', JSON.stringify(bookingDate));
+
+
+    });
+
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {

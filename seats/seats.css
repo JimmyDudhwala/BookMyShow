@@ -428,14 +428,18 @@ input:nth-child(11) {
 .totalPriceSection {
     width: 100%;
     height: 56px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     position: fixed;
     bottom: 0px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;
-    display: none;
+
+}
+
+.totalPriceSection a {
+    text-decoration: none;
 }
 
 .totalPriceSection .totalPriceContainer {
