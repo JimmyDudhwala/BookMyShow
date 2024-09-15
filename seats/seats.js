@@ -246,6 +246,13 @@ fetch('../../theater.json').then(response => response.json()).then(data => {
 
     timeContainer.forEach(time => {
         time.addEventListener('click', e => {
+            const totalPriceContainer = document.querySelector('.totalPriceSection');
+            totalPriceContainer.style.display = 'none';
+
+            const checkboxe = document.querySelectorAll('.seatBox input[type="checkbox"]');
+            checkboxe.forEach(checkbo => {
+                checkbo.checked = false;
+            });
 
             const clickedTime = e.target.closest('.time');
 

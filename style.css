@@ -220,6 +220,11 @@ body {
     font-size: 14px;
     color: #333;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.nav2 .nav2Container .eventSection ul li:hover {
+    color: #f84464;
 }
 
 .nav2 .nav2Container .offerSection {
@@ -252,11 +257,16 @@ body {
     padding-right: 12px;
     padding-left: 12px;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .nav2 .nav2Container .offerSection ul li:nth-last-child(1) {
     padding-right: 0px;
     padding-left: 12px;
+}
+
+.nav2 .nav2Container .offerSection ul li:hover {
+    color: #f84464;
 }
 
 .latestScroller {
