@@ -1,0 +1,87 @@
+[
+    {
+      "title": "Deadpool and Wolverine",
+      "image": "images\\image.png",
+      "about": "Wolverine is recovering from his injuries when he meets the loudmouth, Deadpool. They team up to defeat a common enemy.",
+      "rate": "8.8/10",
+      "rateVotes": "(63.6k Votes)",
+      "screen": "2D, 3D, IMAX 2D, IMAX 3D",
+      "lang": "Hindi, English, Tamil, Telugu",
+      "time": "2h 30m",
+      "ageRate": "A",
+      "releaseDate": "26 Jul, 2024",
+      "genre": "Action/Comedy/Adventure",
+      "link": "movies\\movie.html"
+    },
+    {
+      "title": "Stree 2: Sarkate Ka Aatank",
+      "image": "images\\stree2.avif",
+      "about": "A thrilling sequel to the horror-comedy Stree.",
+      "rate": "7.5/10",
+      "rateVotes": "(45.2k Votes)",
+      "screen": "2D, 3D",
+      "lang": "Hindi",
+      "time": "2h 10m",
+      "ageRate": "U/A",
+      "releaseDate": "15 Aug, 2024",
+      "genre": "Horror/Comedy",
+      "link": "movies\\movie.html"
+    },
+    {
+      "title": "Double iSmart",
+      "image": "images\\Ismartshanker.avif",
+      "about": "A double role comedy film starring Ram Pothineni.",
+      "rate": "6.5/10",
+      "rateVotes": "(12.3k Votes)",
+      "screen": "2D",
+      "lang": "Telugu",
+      "time": "2h 20m",
+      "ageRate": "U",
+      "releaseDate": "12 Sep, 2024",
+      "genre": "Comedy",
+      "link": "movies\\movie.html"
+    },
+    {
+      "title": "It Ends with Us",
+      "image": "images\\IT$withUS.avif",
+      "about": "Based on the novel by Colleen Hoover, this movie is a romantic drama.",
+      "rate": "8.2/10",
+      "rateVotes": "(32.1k Votes)",
+      "screen": "2D",
+      "lang": "English",
+      "time": "2h 40m",
+      "ageRate": "U/A",
+      "releaseDate": "25 Oct, 2024",
+      "genre": "Romance/Drama",
+      "link": "movies\\movie.html"
+    },
+    {
+      "title": "Vedaa",
+      "image": "images\\veda.avif",
+      "about": "A thriller movie starring Naga Chaitanya and Anupama Parameswaran.",
+      "rate": "7.8/10",
+      "rateVotes": "(23.4k Votes)",
+      "screen": "2D",
+      "lang": "Telugu",
+      "time": "2h 30m",
+      "ageRate": "U/A",
+      "releaseDate": "15 Nov, 2024",
+      "genre": "Thriller",
+      "link": "movies\\movie.html"
+    },
+    {
+      "title": "Laila Majnu",
+      "image": "images\\lailaMajnu.avif",
+      "about": "A romantic drama movie starring Aadi Saikumar and Payal Rajput.",
+      "rate": "6.9/10",
+      "rateVotes": "(15.6k Votes)",
+      "screen": "2D",
+      "lang": "Telugu",
+      "time": "2h 10m",
+      "ageRate": "U",
+      "releaseDate": "20 Dec, 2024",
+      "genre": "Romance/Drama",
+      "link": "movies\\movie.html"
+    }
+  ]
+  

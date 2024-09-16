@@ -193,7 +193,7 @@ movieSection.innerHTML = `
     </div>
 `;
 
-fetch('../../theater.json').then(response => response.json()).then(data => {
+fetch('../../Theater.json').then(response => response.json()).then(data => {
     const dates = data;
     localStorage.setItem('theaterData', JSON.stringify(dates));
 

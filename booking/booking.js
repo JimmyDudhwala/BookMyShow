@@ -55,7 +55,7 @@ const theaterName = document.querySelector(".parent");
 document.addEventListener('DOMContentLoaded', function () {
 
 
-    fetch('../../theater.json')
+    fetch('../../Theater.json')
         .then(response => response.json())
         .then(data => {
 

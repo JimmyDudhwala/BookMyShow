@@ -1,0 +1,126 @@
+[
+    {
+      "name": "PVR-near 1km",
+      "timings": [
+        { "time": "7:00 AM", "myTime": "10", "price": "100" },
+        { "time": "9:00 AM", "myTime": "10", "price": "110" },
+        { "time": "10:00 AM", "myTime": "10", "price": "150" },
+        { "time": "12:00 AM", "myTime": "10", "price": "150" },
+        { "time": "1:00 PM", "myTime": "13", "price": "200" },
+        { "time": "4:00 PM", "myTime": "16", "price": "250" },
+        { "time": "7:00 PM", "myTime": "20", "price": "300" },
+        { "time": "10:00 PM", "myTime": "22", "price": "350" }
+      ],
+      "lang-screen": ["English-2D", "Hindi-2D", "Hindi-3D"],
+      "regions": "Near 1km"
+    },
+    {
+      "name": "PVR-near 2km",
+      "timings": [
+        { "time": "10:00 AM", "myTime": "10", "price": "150" },
+        { "time": "1:00 PM", "myTime": "13", "price": "200" },
+        { "time": "4:00 PM", "myTime": "16", "price": "250" },
+        { "time": "7:00 PM", "myTime": "20", "price": "300" },
+        { "time": "10:00 PM", "myTime": "22", "price": "350" }
+      ],
+      "lang-screen": ["English-2D", "Hindi-2D", "English-3D", "Hindi-3D"],
+      "regions": "Near 2km"
+    },
+    {
+      "name": "PVR-near 3km",
+      "timings": [
+        { "time": "10:00 AM", "myTime": "10", "price": "150" },
+        { "time": "1:00 PM", "myTime": "13", "price": "200" },
+        { "time": "4:00 PM", "myTime": "16", "price": "250" },
+        { "time": "7:00 PM", "myTime": "20", "price": "300" },
+        { "time": "10:00 PM", "myTime": "22", "price": "350" }
+      ],
+      "lang-screen": ["English-2D", "English-3D"],
+      "regions": "Near 3km"
+    },
+    {
+      "name": "PVR-near 4km",
+      "timings": [
+        { "time": "10:00 AM", "myTime": "10", "price": "150" },
+        { "time": "1:00 PM", "myTime": "13", "price": "200" },
+        { "time": "4:00 PM", "myTime": "16", "price": "250" },
+        { "time": "7:00 PM", "myTime": "20", "price": "300" },
+        { "time": "10:00 PM", "myTime": "22", "price": "350" }
+      ],
+      "lang-screen": ["English-2D", "Hindi-2D", "English-3D", "Hindi-3D"],
+      "regions": "Near 4km"
+    },
+    {
+      "name": "INOX-near 1km",
+      "timings": [
+        { "time": "10:00 AM", "myTime": "10", "price": "150" },
+        { "time": "1:00 PM", "myTime": "13", "price": "200" },
+        { "time": "4:00 PM", "myTime": "16", "price": "250" },
+        { "time": "7:00 PM", "myTime": "20", "price": "300" },
+        { "time": "10:00 PM", "myTime": "22", "price": "350" }
+      ],
+      "lang-screen": ["English-2D", "Hindi-2D"],
+      "regions": "Near 1km"
+    },
+    {
+      "name": "INOX-near 2km",
+      "timings": [
+        { "time": "10:00 AM", "myTime": "10", "price": "150" },
+        { "time": "1:00 PM", "myTime": "13", "price": "200" },
+        { "time": "4:00 PM", "myTime": "16", "price": "250" },
+        { "time": "7:00 PM", "myTime": "20", "price": "300" },
+        { "time": "10:00 PM", "myTime": "22", "price": "350" }
+      ],
+      "lang-screen": ["English-2D", "Hindi-2D", "Hindi-3D"],
+      "regions": "Near 2km"
+    },
+    {
+      "name": "INOX-near 3km",
+      "timings": [
+        { "time": "10:00 AM", "myTime": "10", "price": "150" },
+        { "time": "1:00 PM", "myTime": "13", "price": "200" },
+        { "time": "4:00 PM", "myTime": "16", "price": "250" },
+        { "time": "7:00 PM", "myTime": "20", "price": "300" },
+        { "time": "10:00 PM", "myTime": "22", "price": "350" }
+      ],
+      "lang-screen": ["English-2D", "Hindi-2D"],
+      "regions": "Near 3km"
+    },
+    {
+      "name": "INOX-near 4km",
+      "timings": [
+        { "time": "10:00 AM", "myTime": "10", "price": "150" },
+        { "time": "1:00 PM", "myTime": "13", "price": "200" },
+        { "time": "4:00 PM", "myTime": "16", "price": "250" },
+        { "time": "7:00 PM", "myTime": "20", "price": "300" },
+        { "time": "10:00 PM", "myTime": "22", "price": "350" }
+      ],
+      "lang-screen": ["Hindi-2D"],
+      "regions": "Near 4km"
+    },
+    {
+      "name": "Rajansh-near 2km",
+      "timings": [
+        { "time": "10:00 AM", "myTime": "10", "price": "150" },
+        { "time": "1:00 PM", "myTime": "13", "price": "200" },
+        { "time": "4:00 PM", "myTime": "16", "price": "250" },
+        { "time": "7:00 PM", "myTime": "20", "price": "300" },
+        { "time": "10:00 PM", "myTime": "22", "price": "350" }
+      ],
+      "lang-screen": ["Hindi-2D", "Hindi-3D"],
+      "regions": "Near 2km"
+    },
+    {
+      "name": "IMAX-near 1km",
+      "timings": [
+        { "time": "10:00 AM", "myTime": "10", "price": "150" },
+        { "time": "1:00 PM", "myTime": "13", "price": "200" },
+        { "time": "4:00 PM", "myTime": "16", "price": "250" },
+        { "time": "7:00 PM", "myTime": "20", "price": "300" },
+        { "time": "10:00 PM", "myTime": "22", "price": "350" }
+      ],
+      "lang-screen": ["English-3D", "Hindi-3D"],
+      "regions": "Near 1km"
+    }
+  ]
+  
