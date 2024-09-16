@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.removeItem('pageRefreshed');
     }
 
+    
     let noOf = parseInt(localStorage.getItem('noOfTickets'), 10) || 0; // Initialize noOf from local storage
     let ticketInfoArray = JSON.parse(localStorage.getItem('ticketInfo')) || []; // Initialize ticketInfoArray from local storage
 
