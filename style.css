@@ -23,7 +23,7 @@ body {
 
 .nav {
     height: 64px;
-    width: 100%;
+    width: 1707px;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -38,6 +38,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 233px;
+    margin-right: 233px;
 }
 
 .nav .navContainer .part1 {
@@ -271,9 +273,9 @@ body {
 
 .latestScroller {
     height: 349px;
-    width: 100%;
+    width: 1707px;
     background-color: #ffffff;
-
+    overflow: hidden;
 }
 
 .latestScroller .latestScrollerContainer {
@@ -283,6 +285,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: end;
+
+
 }
 
 .latestScroller .swiper {
