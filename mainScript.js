@@ -1,6 +1,6 @@
 const swiperWrapper = document.querySelector("#swiper-wrapper1");
 
-fetch("../Movie.json")
+fetch("Movie.json")
     .then(response => response.json())
     .then(data => {
 
