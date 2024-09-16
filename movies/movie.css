@@ -29,7 +29,7 @@ body {
 
 .nav {
     height: 64px;
-    width: 100%;
+    width: 1707px;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -44,6 +44,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 233px;
+    margin-right: 233px;
 }
 
 .nav .navContainer .part1 {
@@ -184,7 +186,7 @@ body {
 
 .nav2 {
     height: 40px;
-    width: 100%;
+    width: 1707px;
     background-color: #f5f5f5;
     display: flex;
     justify-content: center;
@@ -198,6 +200,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 233px;
+    margin-right: 233px;
 }
 
 .nav2 .nav2Container .eventSection {
@@ -226,6 +230,11 @@ body {
     font-size: 14px;
     color: #333;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.nav2 .nav2Container .eventSection ul li:hover {
+    color: #f84464;
 }
 
 .nav2 .nav2Container .offerSection {
@@ -258,11 +267,16 @@ body {
     padding-right: 12px;
     padding-left: 12px;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .nav2 .nav2Container .offerSection ul li:nth-last-child(1) {
     padding-right: 0px;
     padding-left: 12px;
+}
+
+.nav2 .nav2Container .offerSection ul li:hover {
+    color: #f84464;
 }
 
 .fixNav {
