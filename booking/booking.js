@@ -52,6 +52,7 @@ if (selectedMovie) {
 
 const theaterName = document.querySelector(".parent");
 
+
 document.addEventListener('DOMContentLoaded', function () {
 
 
